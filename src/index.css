@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sectionbg {
+    background: url(./assets/house.png);
+    height: 20rem;
+}

@@ -6,11 +6,12 @@ import SignUp from "./components/Login-Signup/SignUp";
 import "./App.css";
 import Login from "./components/Login-Signup/Login";
 import PasswordReset from "./components/Login-Signup/ForgetPassword";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <div className="bg-black text-[#fff]">
+      <div className="bg-black text-[#fff] font-[Inter]">
         <Header />
         {/* <Header2 /> */}
         <Routes>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/password-reset" element={<PasswordReset />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );

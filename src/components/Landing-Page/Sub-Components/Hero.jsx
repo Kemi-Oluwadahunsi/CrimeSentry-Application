@@ -27,8 +27,8 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-between gap-8 w-[50%]">
-            <img src={google} alt="" />
-            <img src={apple} alt="" />
+            <img src={google} alt="" className="hover:scale-105"/>
+            <img src={apple} alt="" className="hover:scale-105"/>
           </div>
         </div>
 
