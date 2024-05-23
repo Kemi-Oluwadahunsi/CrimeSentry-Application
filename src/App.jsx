@@ -11,18 +11,14 @@ function App() {
   return (
     <>
       <div className="bg-black text-[#fff]">
-      <div className="bg-black text-[#fff]">
         <Header />
         {/* <Header2 /> */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/landing-page" element={<PasswordReset />} />
+          <Route path="/password-reset" element={<PasswordReset />} />
         </Routes>
-      </div>
-        <LandingPage />
-        {/* < /> */}
       </div>
     </>
   );
