@@ -2,15 +2,22 @@ import google from "../../assets/flat-color-icons_google.png";
 import apple from "../../assets/ant-design_apple-filled.png";
 import facebook from "../../assets/facebookIcon.png";
 import signup from "../../assets/signUp.png";
-import logo from "/logo.png"
+import logo from "/logo.png";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
     <>
       <div className="flex flex-col justify-center px-[10rem] pt-[2rem] w-full">
-        <div className="flex justify-end">
-          <img src={logo} alt="" />
+        <div className="flex justify-between items-center">
+          <Link to={"/"}>
+            <button className="bg-[#7ED957] py-2 px-5 text-[#fff] rounded-lg hover:scale-105">
+              Home
+            </button>
+          </Link>
+          <div className="">
+            <img src={logo} alt="" />
+          </div>
         </div>
         <section className=" py-[4rem] flex justify-between w-full">
           <div className="">

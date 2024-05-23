@@ -7,9 +7,18 @@ import logo from "/logo.png";
 export default function Login() {
   return (
     <div className="pt-[2rem]">
-      <div className="px-[8rem]">
-        <img src={logo} alt="" />
+      <div className="flex justify-between px-[8rem] items-center">
+        <div className="">
+          <img src={logo} alt="" />
+        </div>
+
+        <Link to={"/"}>
+          <button className="bg-[#7ED957] py-2 px-5 text-[#fff] rounded-lg hover:scale-105">
+            Home
+          </button>
+        </Link>
       </div>
+
       <section className=" py-[4rem] flex justify-between px-[10rem]">
         <div className=" flex flex-col gap-8 basis-[35%]">
           <h2 className="text-[2.5rem] font-[600]">Sign in</h2>
