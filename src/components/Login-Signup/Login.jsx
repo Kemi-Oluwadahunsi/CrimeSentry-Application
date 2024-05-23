@@ -4,8 +4,8 @@ import apple from "../../assets/ant-design_apple-filled.png";
 import facebook from "../../assets/facebookIcon.png";
 export default function Login() {
   return (
-    <section className=" py-[4rem] flex justify-around">
-      <div className=" flex flex-col gap-8 basis-[30%]">
+    <section className=" py-[4rem] flex justify-between px-[10rem]">
+      <div className=" flex flex-col gap-8 basis-[35%]">
         <h2 className="text-[2.5rem] font-[600]">Login</h2>
         <h5 className="text-[1rem] font-[400]">
           Login to access your CrimeSentry account
@@ -22,7 +22,7 @@ export default function Login() {
             <input
               type="text"
               placeholder="john.doe@gmail.com"
-              className="px-2 py-3 rounded-sm outline-none text-[black] w-full "
+              className="px-2 py-3 rounded-sm outline-none text-[black] w-full"
             />
           </div>
           <div className=" relative">
@@ -99,7 +99,7 @@ export default function Login() {
         <img
           src={loginPix}
           alt="phone-image"
-          className="hidden max-w-[25rem] md:block "
+          className="hidden max-w-[30em] md:block "
         />
       </div>
     </section>
