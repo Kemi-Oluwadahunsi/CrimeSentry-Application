@@ -7,18 +7,24 @@ const Hero = () => {
       <div className=" flex justify-between gap-[5rem]">
         <div className="flex flex-col gap-[5rem] ">
           <div className="flex flex-col gap-[1rem]">
+            <h2>WELCOME TO</h2>
             <h1 className="text-[4rem] font-bold font-[Inter]">
               <span className="text-[#7ED957]">Crime</span>
               <span className="text-[#FFDE59]">Sentry</span>
             </h1>
             <p className="text-2xl">A Real Time Crime Report App</p>
           </div>
-
-          <p className="w-[50%] text-lg leading-10">
-            CrimeSentry is a cutting-edge community application designed to
-            empower citizens with the ability to report crimes instantly and in
-            realtime
-          </p>
+          <div className="flex flex-col gap-4">
+            <h2>
+              <span className="text-[#7ED957]">STAY INFORMED,</span>
+              <span className="text-[#FFDE59]">STAY SAFE</span>
+            </h2>
+            <p className="w-[50%] text-lg leading-10">
+              CrimeSentry is a cutting-edge community application designed to
+              empower citizens with the ability to report crimes instantly and
+              in realtime
+            </p>
+          </div>
 
           <div className="flex justify-between gap-8 w-[50%]">
             <img src={google} alt="" />
