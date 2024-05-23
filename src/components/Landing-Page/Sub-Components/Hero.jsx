@@ -1,9 +1,9 @@
-import mobile from "../../../assets/mobile-hero.png";
+import mobileVideo from "../../../assets/mobile-hero.mp4";
 import google from "../../../assets/google.png";
 import apple from "../../../assets/apple.png";
 const Hero = () => {
   return (
-    <div className="px-[8rem] pt-[5rem] flex justify-center items-center ">
+    <div className="px-[8rem] py-[5rem] flex justify-center items-center ">
       <div className=" flex justify-between gap-[5rem]">
         <div className="flex flex-col gap-[5rem] ">
           <div className="flex flex-col gap-[1rem]">
@@ -17,9 +17,9 @@ const Hero = () => {
           <div className="flex flex-col gap-4">
             <h2>
               <span className="text-[#7ED957]">STAY INFORMED,</span>
-              <span className="text-[#FFDE59]">STAY SAFE</span>
+              <span className="text-[#FFDE59]"> STAY SAFE</span>
             </h2>
-            <p className="w-[50%] text-lg leading-10">
+            <p className="w-[70%] text-lg leading-10">
               CrimeSentry is a cutting-edge community application designed to
               empower citizens with the ability to report crimes instantly and
               in realtime
@@ -27,14 +27,30 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-between gap-8 w-[50%]">
-            <img src={google} alt="" className="hover:scale-105"/>
-            <img src={apple} alt="" className="hover:scale-105"/>
+            <img src={google} alt="" className="hover:scale-105" />
+            <img src={apple} alt="" className="hover:scale-105" />
           </div>
         </div>
 
-        <div>
-          <img src={mobile} alt="" />
+        <div className="basis-[100%] h-[52rem] videobg relative rounded-2xl">
+          <div className="w-[40rem] absolute top-[5rem]  right-[1rem] ">
+            <video
+            src={mobileVideo}
+            className="w-full h-[46rem] "
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            Your browser does not support the video tag.
+          </video>
+          </div>
+          
         </div>
+
+        {/* <div className="">
+          <img src={mobile} alt="" />
+        </div> */}
       </div>
     </div>
   );

@@ -6,3 +6,9 @@
     background: url(./assets/house.png);
     height: 20rem;
 }
+
+.videobg {
+    background: url(./assets/mobile-hero.png);
+    background-repeat: no-repeat;
+    /* background-size: ; */
+}

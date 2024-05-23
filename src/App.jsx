@@ -6,7 +6,7 @@ import SignUp from "./components/Login-Signup/SignUp";
 import "./App.css";
 import Login from "./components/Login-Signup/Login";
 import PasswordReset from "./components/Login-Signup/ForgetPassword";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
