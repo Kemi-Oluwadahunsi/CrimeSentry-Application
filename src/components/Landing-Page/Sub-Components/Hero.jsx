@@ -32,11 +32,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="basis-[100%] h-[52rem] videobg relative rounded-2xl">
-          <div className="w-[40rem] absolute top-[5rem]  right-[1rem] ">
+        <div className="basis-[60%] h-[52rem] videobg relative rounded-2xl">
+          <div className="absolute top-[2rem]  left-9">
             <video
             src={mobileVideo}
-            className="w-full h-[46rem] "
+            className="w-full h-[48rem] "
             autoPlay
             muted
             loop

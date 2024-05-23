@@ -2,7 +2,7 @@
 const Join = () => {
   return (
     <div className="pb-[5rem] flex items-center justify-center  ">
-      <div className="sectionbg w-full flex flex-col gap-[2rem] items-center justify-center">
+      <div className="sectionjoin w-full flex flex-col gap-[2rem] items-center justify-center">
         <h2 className="text-[3rem] font-[Inter] text-center mx-auto">
           Join The
           <span className="text-[#7ED957]"> Crime</span>

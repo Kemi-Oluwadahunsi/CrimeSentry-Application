@@ -4,11 +4,18 @@
 
 .sectionbg {
     background: url(./assets/house.png);
-    height: 20rem;
+    height: 25rem;
+}
+
+.sectionjoin {
+    background: url(./assets/hands.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .videobg {
-    background: url(./assets/mobile-hero.png);
+    background: url(./assets/mobile-hero2.png);
     background-repeat: no-repeat;
-    /* background-size: ; */
 }
