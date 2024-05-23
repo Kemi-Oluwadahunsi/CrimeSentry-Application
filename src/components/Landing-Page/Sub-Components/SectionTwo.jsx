@@ -1,4 +1,4 @@
-import house from "../../../assets/house.png"
+// import house from "../../../assets/house.png"
 const SectionTwo = () => {
   return (
     <div className="pb-[5rem] flex items-center justify-center flex-col gap-[2rem]">
@@ -11,14 +11,16 @@ const SectionTwo = () => {
       </div>
 
       <div>
-        <img src={house} alt="house" className="w-[70%] mx-auto" />
+        {/* <img src={house} alt="house" className="w-[70%] mx-auto" /> */}
       </div>
 
       <div className="flex justify-between px-[7rem] w-[85%]">
         <div className="flex flex-col gap-4 basis-[30%]">
-          <h2 className="text-2xl font-bold font-[Inter]">Report A Crim At Instance</h2>
+          <h2 className="text-2xl font-bold font-[Inter]">
+            Report A Crim At Instance
+          </h2>
           <p className="text-sm">
-          Crime reporting made easier. Report crimes as it is happening.
+            Crime reporting made easier. Report crimes as it is happening.
           </p>
         </div>
 
@@ -33,7 +35,9 @@ const SectionTwo = () => {
         </div>
 
         <div className="flex flex-col gap-4 basis-[30%]">
-          <h2 className="text-2xl font-bold font-[Inter]">Always know what’s going on in your community .</h2>
+          <h2 className="text-2xl font-bold font-[Inter]">
+            Always know what’s going on in your community .
+          </h2>
           <p className="text-sm">
             If there’s commotion like police activity, riot, unnecessary
             disturbance, or road closures, pull up the app and know why
@@ -43,6 +47,6 @@ const SectionTwo = () => {
       </div>
     </div>
   );
-}
+};
 
-export default SectionTwo
+export default SectionTwo;
