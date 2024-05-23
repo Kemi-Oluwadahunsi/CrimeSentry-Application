@@ -1,7 +1,7 @@
-import loginPix from "../assets/loginPix.png";
-import google from "../assets/flat-color-icons_google.png";
-import apple from "../assets/ant-design_apple-filled.png";
-import facebook from "../assets/facebookIcon.png";
+import loginPix from "../../assets/loginPix.png";
+import google from "../../assets/flat-color-icons_google.png";
+import apple from "../../assets/ant-design_apple-filled.png";
+import facebook from "../../assets/facebookIcon.png";
 export default function Login() {
   return (
     <section className=" mt-[4rem] flex justify-around h-[100vh]">

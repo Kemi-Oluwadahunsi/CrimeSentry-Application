@@ -4,8 +4,8 @@ import Header from "./components/Header/Header";
 import LandingPage from "./components/Landing-Page/index";
 import SignUp from "./components/Login-Signup/SignUp";
 import "./App.css";
-import Login from "./components/Login";
-import PasswordReset from "./components/ForgetPassword";
+import Login from "./components/Login-Signup/Login";
+import PasswordReset from "./components/Login-Signup/ForgetPassword";
 
 function App() {
   return (

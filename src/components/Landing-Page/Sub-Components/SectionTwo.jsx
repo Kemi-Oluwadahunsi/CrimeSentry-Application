@@ -1,4 +1,4 @@
-// import house from "../../../assets/house.png"
+import house from "../../../assets/house.png"
 const SectionTwo = () => {
   return (
     <div className="pb-[5rem] flex items-center justify-center flex-col gap-[2rem]">
@@ -11,7 +11,7 @@ const SectionTwo = () => {
       </div>
 
       <div>
-        {/* <img src={house} alt="house" className="w-[70%] mx-auto" /> */}
+        <img src={house} alt="house" className="w-[70%] mx-auto" />
       </div>
 
       <div className="flex justify-between px-[7rem] w-[85%]">
