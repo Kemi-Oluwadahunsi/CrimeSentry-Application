@@ -47,10 +47,6 @@ const Hero = () => {
           </div>
           
         </div>
-
-        {/* <div className="">
-          <img src={mobile} alt="" />
-        </div> */}
       </div>
     </div>
   );

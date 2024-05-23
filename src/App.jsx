@@ -7,12 +7,20 @@ import "./App.css";
 import Login from "./components/Login-Signup/Login";
 import PasswordReset from "./components/Login-Signup/ForgetPassword";
 import Footer from "./components/Footer/Footer";
+import { useLocation } from "react-router-dom/dist";
+import { useEffect } from "react";
 
 function App() {
+  const location = useLocation();
+  const noHeaderFooterRoutes = ["/signup", "/login", "/password-reset"];
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
   return (
     <>
       <div className="bg-black text-[#fff] font-[Inter]">
-        <Header />
+        {!noHeaderFooterRoutes.includes(location.pathname) && <Header />}
         {/* <Header2 /> */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
