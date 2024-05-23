@@ -4,42 +4,45 @@ import apple from "../../assets/ant-design_apple-filled.png";
 import facebook from "../../assets/facebookIcon.png";
 export default function Login() {
   return (
-    <section className=" mt-[4rem] flex justify-around h-[100vh]">
-      <div className=" ">
+    <section className=" py-[4rem] flex justify-around">
+      <div className=" flex flex-col gap-8 basis-[30%]">
         <h2 className="text-[2.5rem] font-[600]">Login</h2>
-        <h5 className="text-[1rem] font-[400] mb-8">
-          Login to access your travelwise account
+        <h5 className="text-[1rem] font-[400]">
+          Login to access your CrimeSentry account
         </h5>
-        <div className="mt-[1.5rem] relative mb-8">
-          <label
-            htmlFor="email"
-            className="ml-3 text-[1rem] text-[black] font-[600] w-[3rem] bg-[white] 
-             border-0 absolute top-[-0.8rem] text-center "
-          >
-            Email
-          </label>
-          <input
-            type="text"
-            placeholder="john.doe@gmail.com"
-            className="p-2 w-[25rem] rounded-sm outline-none text-[black]  "
-          />
-        </div>
-        <div className="mt-[1.5rem] relative mb-6">
-          <label
-            htmlFor="password"
-            className="ml-3 text-[1rem] text-[black] font-[600] w-[5rem] bg-[white] 
-             border-0 absolute top-[-0.8rem] text-center "
-          >
-            Password
-          </label>
+        <div className="flex flex-col gap-8">
+          <div className=" relative w-full">
+            <label
+              htmlFor="email"
+              className=" text-[black] font-[600] px-[2rem] bg-[white] 
+             border-0 absolute top-[-1rem] left-[2%] text-center "
+            >
+              Email
+            </label>
+            <input
+              type="text"
+              placeholder="john.doe@gmail.com"
+              className="px-2 py-3 rounded-sm outline-none text-[black] w-full "
+            />
+          </div>
+          <div className=" relative">
+            <label
+              htmlFor="password"
+              className=" text-[black] font-[600] px-[2rem] bg-[white] 
+             border-0 absolute top-[-1rem] left-[2%] text-center"
+            >
+              Password
+            </label>
 
-          <input
-            type="password"
-            placeholder="************"
-            className="p-2 w-[25rem]  rounded-sm outline-none text-[black]"
-          />
+            <input
+              type="password"
+              placeholder="************"
+              className="px-2 py-3 rounded-sm outline-none text-[black] w-full "
+            />
+          </div>
         </div>
-        <div className="flex gap-[6rem] md:gap-[9rem]">
+
+        <div className="flex justify-between md:gap-[9rem]">
           <span className="font-[600]">
             <input type="checkbox" name="rememberMe" id="rememberMe" />
             &nbsp; Remember me
@@ -48,11 +51,14 @@ export default function Login() {
             <a href="#">Forget Password</a>
           </span>
         </div>
-        <input
-          type="submit"
-          value="Login"
-          className="p-2 w-[25rem] cursor-pointer rounded-sm outline-none text-[white] bg-[#7ED957] mt-10 font-[600] mb-2 hover:bg-[#519135]"
-        />
+        <div className="w-full">
+          <input
+            type="submit"
+            value="Login"
+            className="p-2 cursor-pointer rounded-sm outline-none text-[white] bg-[#7ED957] font-[600] hover:bg-[#519135] w-full"
+          />
+        </div>
+
         <p className="text-center">
           Don&apos;t have an account?
           <span className="text-[#FF8682]">
@@ -60,30 +66,35 @@ export default function Login() {
             <a href="#">Sign up</a>
           </span>
         </p>
-        <div className="relative mb-12">
-          <hr className="bg-[gray] mt-10" />
-          <p className="absolute text-[gray] p-2 -top-[1.3rem] left-[9rem] border-none bg-[black]">
-            Or login with
-          </p>
-        </div>
-        <div className="flex justify-around gap-4">
-          <img
-            src={facebook}
-            alt="facebook-icon"
-            className="border px-10 py-3 rounded-md border-[#7ED957]"
-          />
-          <img
-            src={google}
-            alt="facebook-icon"
-            className="border px-10 py-3 rounded-md border-[#7ED957]"
-          />
-          <img
-            src={apple}
-            alt="facebook-icon"
-            className="border px-10 py-3 rounded-md border-[#7ED957]"
-          />
+
+        <div className="flex flex-col gap-[3rem] w-full">
+          <div className="relative">
+            <hr className="bg-[gray]" />
+            <p className="absolute text-[gray] p-2 -top-[1.3rem] left-[11rem] border-none bg-[black]">
+              Or login with
+            </p>
+          </div>
+
+          <div className="flex justify-between w-full">
+            <img
+              src={facebook}
+              alt="facebook-icon"
+              className="border px-10 py-3 rounded-md border-[#7ED957]"
+            />
+            <img
+              src={google}
+              alt="facebook-icon"
+              className="border px-10 py-3 rounded-md border-[#7ED957]"
+            />
+            <img
+              src={apple}
+              alt="facebook-icon"
+              className="border px-10 py-3 rounded-md border-[#7ED957]"
+            />
+          </div>
         </div>
       </div>
+
       <div>
         <img
           src={loginPix}
