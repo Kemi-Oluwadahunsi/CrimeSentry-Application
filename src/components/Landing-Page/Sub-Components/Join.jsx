@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Join = () => {
   return (
@@ -10,9 +11,9 @@ const Join = () => {
           Community
         </h2>
 
-        <button className="bg-[#7ED957] py-3 px-8 text-[1.5rem] font-bold rounded-lg hover:scale-105">
+        <Link to={"/signup"}><button className="bg-[#7ED957] py-3 px-8 text-[1.5rem] font-bold rounded-lg hover:scale-105">
           JOIN NOW
-        </button>
+        </button></Link>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ark from "../../../assets/ark.png";
 import cres from "../../../assets/cres.png";
 import line from "../../../assets/line.png";
@@ -27,9 +28,11 @@ const WorkTogether = () => {
                 </p>
               </div>
 
-              <button className="bg-[#7ED957] py-3 px-8 text-[1.5rem] font-bold rounded-lg hover:scale-105">
-                JOIN NOW
-              </button>
+              <Link to="/signup">
+                <button className="bg-[#7ED957] py-3 px-8 text-[1.5rem] font-bold rounded-lg hover:scale-105">
+                  JOIN NOW
+                </button>
+              </Link>
             </div>
           </div>
         </div>
