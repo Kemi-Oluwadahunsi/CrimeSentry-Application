@@ -1,4 +1,4 @@
-import passwordReset from "../../assets/forgetPassword.png";
+import verify from "../../assets/verify.png";
 import google from "../../assets/flat-color-icons_google.png";
 import apple from "../../assets/ant-design_apple-filled.png";
 import facebook from "../../assets/facebookIcon.png";
@@ -12,12 +12,10 @@ export default function Login() {
           <FontAwesomeIcon icon={faArrowLeft} />
           <p>Back to sign inin</p>
         </div>
-        
-        <h2 className="text-[2.5rem] font-[600]">Forgot your password?</h2>
+
+        <h2 className="text-[2.5rem] font-[600]">Verify Code</h2>
         <h5 className="text-[1rem] font-[400]">
-          Don&apos;t worry, happens to all of us. Enter your email below to{" "}
-          <br />
-          recover your password
+          An authentication 
         </h5>
         <div className="mt-[1.5rem] relative">
           <label
@@ -69,7 +67,7 @@ export default function Login() {
       </div>
       <div>
         <img
-          src={passwordReset}
+          src={verify}
           alt="phone-image"
           className="hidden max-w-[30rem] md:block "
         />

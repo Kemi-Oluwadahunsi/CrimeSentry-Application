@@ -6,6 +6,7 @@ import SignUp from "./components/Login-Signup/SignUp";
 import "./App.css";
 import Login from "./components/Login-Signup/Login";
 import PasswordReset from "./components/Login-Signup/ForgetPassword";
+import Verify from "./components/Login-Signup/Verify";
 import Footer from "./components/Footer/Footer";
 import { useLocation } from "react-router-dom/dist";
 import { useEffect } from "react";
@@ -27,8 +28,9 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/password-reset" element={<PasswordReset />} />
+          <Route path="/verify" element={<Verify />} />
         </Routes>
-        <Footer />
+        {!noHeaderFooterRoutes.includes(location.pathname) && <Footer />}
       </div>
     </>
   );

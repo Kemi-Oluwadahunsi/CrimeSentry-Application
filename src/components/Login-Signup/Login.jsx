@@ -63,7 +63,7 @@ export default function Login() {
               &nbsp; Remember me
             </span>
             <span className="text-[#FF8682]">
-              <a href="#">Forget Password</a>
+              <Link to="/password-reset">Forget Password</Link>
             </span>
           </div>
           <div className="w-full">
