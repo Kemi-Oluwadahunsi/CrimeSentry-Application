@@ -20,7 +20,7 @@ function App() {
     }, [location.pathname]);
   return (
     <>
-      <div className="bg-black text-[#fff] font-[Inter]">
+      <div className="bg-black text-[#fff] font-[Inter] max-w-[1600px] mx-auto">
         {!noHeaderFooterRoutes.includes(location.pathname) && <Header />}
         {/* <Header2 /> */}
         <Routes>
